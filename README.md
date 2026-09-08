@@ -23,7 +23,7 @@ TypeScriptFoundry/
 └── README.md
 ```
 
-The hub automatically discovers project folders under `projects/`. `Ideas.md` is the backlog and source of truth for the collection.
+The hub automatically discovers project folders under `projects/`. A directory is included in the project catalog only when it contains a `package.json`; `_template` is always excluded.
 
 ## Add a project
 
@@ -33,6 +33,7 @@ The hub automatically discovers project folders under `projects/`. `Ideas.md` is
 4. Run `npm install` and `npm run build` from the project directory.
 5. Run the generated JavaScript with Node.js when appropriate, or use the project-specific browser entry point.
 6. Push the folder to GitHub.
+7. The project is automatically discovered by the hub without editing a registry.
 
 ## Project rules
 
